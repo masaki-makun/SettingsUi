@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./dist/bundle.js"></script>
+    <link rel="stylesheet" href="./dist/styles.css">
+    <title>SettingsUi</title>
+  </head>
+  <body>
+
+    <main class="main">
+      <div class="container">
+        <div class="wrap-logo">
+          <h1 class="logo">Movielax</h1>
+        </div>
+        <div class="leftBox">
+          <nav class="nav">
+            <a class="active nav-link" href="#profile" title="Profile"
+              ><i class="fa fa-user"></i
+            ></a>
+            <a class="nav-link" href="#payment"  title="Payment"
+              ><i class="fa fa-credit-card"></i
+            ></a>
+            <a class="nav-link" href="#subscription" title="Subscription"
+              ><i class="fa fa-tv"></i
+            ></a>
+            <a class="nav-link" href="#privacy" title="Privacy"
+              ><i class="fa fa-tasks"></i
+            ></a>
+            <a class="nav-link" href="#settings" title="Settings"
+              ><i class="fa fa-cog"></i
+            ></a>
+          </nav>
+        </div>
+        <div class="rightBox">
+          <div class="contents active" id="profile">
+            <h1 class="contents__title">個人情報</h1>
+            <div class="contents__inner">
+              <div class="contents__left">
+                <h2 class="contents__sub-title">フルネーム</h2>
+                <p class="contents__value">
+                  Mike Dan
+                </p>
+              </div>
+              <div class="contents__right">
+                <button type="button" class="btn" title="Update">アップデートする</button>
+              </div>
+            </div>
+            <div class="contents__inner">
+              <div class="contents__left">
+                <h2 class="contents__sub-title">性別</h2>
+                <p class="contents__value">
+                  男性
+                </p>
+              </div>
+              <div class="contents__right">
+              </div>
+            </div>
+            <div class="contents__inner">
+              <div class="contents__left">
+                <h2 class="contents__sub-title">Eメール</h2>
+                <p class="contents__value">
+                  example@example.com
+                </p>
+              </div>
+              <div class="contents__right">
+                <button type="button" class="btn" title="Change">変更する</button>
+              </div>
+            </div>
+            <div class="contents__inner">
+              <div class="contents__left">
+                <h2 class="contents__sub-title">パスワード</h2>
+              </div>
+              <div class="contents__right">
+                <button type="button" class="btn" title="Change">変更する</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="payment contents"  id="payment">
+            <h1 class="contents__title">お支払い情報</h1>
+            <div class="contents__inner">
+              <div class="contents__left">
+                <h2 class="contents__sub-title">お支払い情報</h2>
+                <p class="contents__value">
+                  Mastercard **** **** **** 0000
+                </p>
+              </div>
+              <div class="contents__right">
+                <button type="button" class="btn" title="Update">アップデートする</button>
+              </div>
+            </div>
+            <div class="contents__inner">
+              <div class="contents__left">
+                <h2 class="contents__sub-title">請求先住所</h2>
+                <p class="contents__value">
+                  千葉県千葉市緑区1-2-3
+                </p>
+              </div>
+              <div class="contents__right">
+                <button type="button" class="btn" title="Change">変更する</button>
+              </div>
+            </div>
+            <div class="contents__inner">
+              <div class="contents__left">
+                <h2 class="contents__sub-title">郵便番号</h2>
+                <p class="contents__value">
+                  999000
+                </p>
+              </div>
+              <div class="contents__right">
+              </div>
+            </div>
+            <div class="contents__inner">
+              <div class="contents__left">
+                <h2 class="contents__sub-title">請求履歴</h2>
+                <p class="contents__value">
+                  2020
+                </p>
+              </div>
+              <div class="contents__right">
+                <button type="button" class="btn" title="View">見る</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="subscription contents" id="subscription">
+            <h1 class="contents__title">購読情報</h1>
+            <div class="contents__inner">
+              <div class="contents__left">
+                <h2 class="contents__sub-title">次回のお支払日</h2>
+                <p class="contents__value">
+                  05-03-2020
+                </p>
+              </div>
+              <div class="contents__right">
+                <button type="button" class="btn" title="Pay now">今すぐ支払う</button>
+              </div>
+            </div>
+            <div class="contents__inner">
+              <div class="contents__left">
+                <h2 class="contents__sub-title">次回のチャージ</h2>
+                <p class="contents__value">
+                  ¥980<span> 税込み </span>
+                </p>
+              </div>
+              <div class="contents__right">
+                <button type="button" class="btn" title="Change">変更する</button>
+              </div>
+            </div>
+            <div class="contents__inner">
+              <div class="contents__left">
+                <h2 class="contents__sub-title">基本プラン</h2>
+                <p class="contents__value">
+                  限定コマーシャル
+                </p>
+              </div>
+              <div class="contents__right">
+                <button type="button" class="btn" title="Change">変更する</button>
+              </div>
+            </div>
+            <div class="contents__inner">
+              <div class="contents__left">
+                <h2 class="contents__sub-title">アドオン</h2>
+                <p class="contents__value">
+                  無し
+                </p>
+              </div>
+              <div class="contents__right">
+                <button type="button" class="btn" title="View">管理する</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="privacy contents" id="privacy">
+            <h1 class="contents__title">プライバシー設定</h1>
+            <div class="contents__inner">
+              <div class="contents__left">
+                <h2 class="contents__sub-title">メール通知の管理</h2>
+              </div>
+              <div class="contents__right">
+                <button type="button" class="btn" title="Manage">管理する</button>
+              </div>
+            </div>
+            <div class="contents__inner">
+              <div class="contents__left">
+                <h2 class="contents__sub-title">プライバシー設定の管理</h2>
+              </div>
+              <div class="contents__right">
+                <button type="button" class="btn" title="Manage">管理する</button>
+              </div>
+            </div>
+            <div class="contents__inner">
+              <div class="contents__left">
+                <h2 class="contents__sub-title">利用規約を見る</h2>
+              </div>
+              <div class="contents__right">
+                <button type="button" class="btn" title="View">見る</button>
+              </div>
+            </div>
+            <div class="contents__inner">
+              <div class="contents__left">
+                <h2 class="contents__sub-title">広告体験のパーソナライズ</h2>
+              </div>
+              <div class="contents__right">
+                <button type="button" class="btn" title="Update">アップデートする</button>
+              </div>
+            </div>
+            <div class="contents__inner">
+              <div class="contents__left">
+                <h2 class="contents__sub-title">アカウントの保護</h2>
+              </div>
+              <div class="contents__right">
+                <button type="button" class="btn" title="Protect">保護する</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="settings contents" id="settings">
+            <h1 class="contents__title">アカウント設定</h1>
+            <div class="contents__inner">
+              <div class="contents__left">
+                <h2 class="contents__sub-title">ウォッチリストを同期させる</h2>
+              </div>
+              <div class="contents__right">
+                <button type="button" class="btn" title="Sync">同期する</button>
+              </div>
+            </div>
+            <div class="contents__inner">
+              <div class="contents__left">
+                <h2 class="contents__sub-title">購読を継続する</h2>
+              </div>
+              <div class="contents__right">
+                <button type="button" class="btn" title="Hold">継続する</button>
+              </div>
+            </div>
+            <div class="contents__inner">
+              <div class="contents__left">
+                <h2 class="contents__sub-title">購読の取り消し</h2>
+              </div>
+              <div class="contents__right">
+                <button type="button" class="btn" title="Cancel">取り消す</button>
+              </div>
+            </div>
+            <div class="contents__inner">
+              <div class="contents__left">
+                <h2 class="contents__sub-title">デバイスを管理する</h2>
+              </div>
+              <div class="contents__right">
+                <button type="button" class="btn" title="Manage">管理する</button>
+              </div>
+            </div>
+            <div class="contents__inner">
+              <div class="contents__left">
+                <h2 class="contents__sub-title">紹介</h2>
+              </div>
+              <div class="contents__right">
+                <button type="button" class="btn" title="Get">獲得する</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+  </body>
+</html>
